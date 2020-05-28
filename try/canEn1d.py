@@ -1,7 +1,7 @@
 import math
 import numpy as np
 import pandas as pd
-
+'''
 import matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.layers import Dense
@@ -10,7 +10,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-
+'''
 
 #importing data
 df1 = pd.read_csv("occ_L8_N4.dat", sep='\s+', names=['it','energy',1,2,3,4,5,6,7,8])
@@ -43,7 +43,7 @@ print(uenAvg)
 
 
 
-
+'''
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(occAvg, uenAvg, test_size=0.3)
@@ -75,8 +75,4 @@ ax.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--', lw=4)
 ax.set_xlabel('Measured')
 ax.set_ylabel('Predicted')
 plt.show()
-
-
-
-#t = np.array([0.342107325862, 0.578225727879,  0.472076849371,  0.527034512791,  0.432574180808,  0.636681470828,  0.381518131203,  0.629781801257])
-#pipeline.predict(t)
+'''
